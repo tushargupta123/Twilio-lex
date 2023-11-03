@@ -1,0 +1,11 @@
+PS C:\WINDOWS\system32> twilio profiles:list
+ID           Account SID                         Active
+tushargupta  ACf5e5c3d53a9ab4c563b663fc1e5954bb  false
+
+PS C:\WINDOWS\system32> twilio profiles:use tushargupta
+set "tushargupta" as active profile
+twilio-cli configuration saved to "C:\Users\tusha\.twilio-cli\config.json"
+
+PS C:\WINDOWS\system32> twilio api:core:messages:create --from +15313313936 --body "Hi there"  --to +917837242626
+SID                                 From          To             Status  Direction     Date Sent
+SMbdf4ec8f6427d10de14adaeee5cec5ca  +15313313936  +917837242626  queued  outbound-api  null
